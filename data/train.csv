@@ -1,0 +1,1289 @@
+title	abstract
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."
+breadcrumb dirty indicator id is not unique	"Steps:
+- In Settings - General: check Enable Editor Tab Support
+- In Settings - Editor Settings: uncheck Auto Save
+- Go to the Editor page.
+- Open at least 2 files, so that you have at least 2 tabs.
+- In the 2nd tab, make a change, so that the file is ""dirty"" and the tab shows an asterisk.
+- Hover on the 2nd tab to see its breadcrumb.
+- Problem 1: The ""dirty"" indicator for this file should show up in the breadcrumb, but it is missing.
+- Now hover over the 1st (leftmost) tab.
+- Problem 2: This file is not ""dirty"", and yet its breadcrumb is showing a ""dirty"" indicator asterisk.
+
+The bug is that an element with id ""dirty"" is being created for each breadcrumb (on line 152 in breadcrumbs.js).
+So when the browser is asked for an element with that id (on line 368 of globalCommands.js) it just returns the first one found.
+
+The breadcrumb ""dirty"" id needs to be made unique per file/tab/breadcrumb, and the mechanism for adding/removing the indicator needs to use the unique id.
+(Either that, or implement it in a way that doesn't use an id).
+
+This is also causing an ""ids must be unique on the page"" accessibility scanning violation."
+ TypeError typing left/right arrows in launch config dropdown	"- focus the launch config ""combo""
+- type down arrow to open the dropdown
+- type right arrow
+TypeError: t.parentNode.getAttribute is not a function"
+eclipse installer for 2022-9r may be infected with a virus from the virustoal scan result.	"eclipse installer for 2022-9r : eclipse-inst-jre-win64.exe
+sha512:241eeea731ab1f80e07b598a14a2c2591b0a3538e48bc78d37e30176c054d437545e455341a74f478a2990c7419d5b0241327211edd25d6b8de8925d10abae46 may be infected with a virus from the virustoal scan result.
+
+sha256:1d57ba7cf596601a1096709fcf9839d069114bb2f0585ae7f54ee8d5f725db8e
+file: eclipse-inst-jre-win64 (1).exe
+date: 2022-09-25 16:36:26 UTC
+detected by Cybereason: Malicious.3e8304
+
+Possible reasons
+malicious behavior
+
+Process Creation Using Sysnative Folder
+Wow6432Node CurrentVersion Autorun Keys Modification
+Please check the file for malware. It seems like from heuristic scan because of the name."
+"In Capella, editors are not closed when closing the session after a restart"	"n Sirius, the org.eclipse.sirius.ui.business.internal.session.EditingSession tracks editors attached to a given Session. It allows to close them when closing the session. 
+After a restart with already opened editors, the EditingSession does not track editors references until the focus is set on them. When closing the session, the EditingSession search for editor referencing the current session (closeOthersEditors method). This task is launched asynchronously on the UI thread. It works properly in Sirius but in the Capella context, the Session is closed before the execution of the closeOthersEditors: the session resources cannot be retrieve and it cannot find references editor.
+
+From a Capella:
+
+Import IFE samble
+Open the project
+Open several diagrams (at least 2)
+restart
+Close the session => KO, only one editor (the one with the focus) is closed and the other ones are still opened."

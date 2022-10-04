@@ -1,0 +1,96 @@
+title	abstract
+JGit and EGit do not notify about ConfigChangedEvent when editing git config from console	"When i run something like 
+git remote add fj https://github.com/git-test4/.git
+
+I expect ConfigChanged listeners to be notified (the ones which are specified in org.eclipse.egit.core.RepositoryCache.RepositoryCache(String, int)
+ and 
+org.eclipse.egit.core.RepositoryHandle.addListeners(List<ListenerHandle>, ListenerList, WeakReference<RepositoryHandle>) for example). 
+
+But for now this type of event is fired only when some operations with org.eclipse.jgit.lib.Config inside Eclipse are made (Config class has fireConfigChangedEvent()). 
+
+I want to make some validator functions which validate Config settings when it's modified (specifically .git file). But Eclipse simply doesn't register this event when it'd done via console git client."
+Avoid packaging jetty bundles already packaged by the Platform	"
+DescriptionNitin Dahyabhai CLA Friend 2022-09-29 00:58:13 EDT
+The Platform builds *some* of the Jetty bundles we use for our Preview Servers. While having bundles built and signed by both the Platform and WTP haven't presented issues before, this should be cleaned up"
+NPE in org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions()	"Exception in thread ""org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor"" java.lang.NullPointerException: Cannot invoke ""org.eclipse.wst.sse.core.internal.provisional.IndexedRegion.getEndOffset()"" because ""indexedRegion"" is null
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions(AbstractStructuredFoldingStrategy.java:507)
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.reconcile(AbstractStructuredFoldingStrategy.java:179)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:332)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694"
+JGit and EGit do not notify about ConfigChangedEvent when editing git config from console	"When i run something like 
+git remote add fj https://github.com/git-test4/.git
+
+I expect ConfigChanged listeners to be notified (the ones which are specified in org.eclipse.egit.core.RepositoryCache.RepositoryCache(String, int)
+ and 
+org.eclipse.egit.core.RepositoryHandle.addListeners(List<ListenerHandle>, ListenerList, WeakReference<RepositoryHandle>) for example). 
+
+But for now this type of event is fired only when some operations with org.eclipse.jgit.lib.Config inside Eclipse are made (Config class has fireConfigChangedEvent()). 
+
+I want to make some validator functions which validate Config settings when it's modified (specifically .git file). But Eclipse simply doesn't register this event when it'd done via console git client."
+Avoid packaging jetty bundles already packaged by the Platform	"
+DescriptionNitin Dahyabhai CLA Friend 2022-09-29 00:58:13 EDT
+The Platform builds *some* of the Jetty bundles we use for our Preview Servers. While having bundles built and signed by both the Platform and WTP haven't presented issues before, this should be cleaned up"
+NPE in org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions()	"Exception in thread ""org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor"" java.lang.NullPointerException: Cannot invoke ""org.eclipse.wst.sse.core.internal.provisional.IndexedRegion.getEndOffset()"" because ""indexedRegion"" is null
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions(AbstractStructuredFoldingStrategy.java:507)
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.reconcile(AbstractStructuredFoldingStrategy.java:179)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:332)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694"
+JGit and EGit do not notify about ConfigChangedEvent when editing git config from console	"When i run something like 
+git remote add fj https://github.com/git-test4/.git
+
+I expect ConfigChanged listeners to be notified (the ones which are specified in org.eclipse.egit.core.RepositoryCache.RepositoryCache(String, int)
+ and 
+org.eclipse.egit.core.RepositoryHandle.addListeners(List<ListenerHandle>, ListenerList, WeakReference<RepositoryHandle>) for example). 
+
+But for now this type of event is fired only when some operations with org.eclipse.jgit.lib.Config inside Eclipse are made (Config class has fireConfigChangedEvent()). 
+
+I want to make some validator functions which validate Config settings when it's modified (specifically .git file). But Eclipse simply doesn't register this event when it'd done via console git client."
+Avoid packaging jetty bundles already packaged by the Platform	"
+DescriptionNitin Dahyabhai CLA Friend 2022-09-29 00:58:13 EDT
+The Platform builds *some* of the Jetty bundles we use for our Preview Servers. While having bundles built and signed by both the Platform and WTP haven't presented issues before, this should be cleaned up"
+NPE in org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions()	"Exception in thread ""org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor"" java.lang.NullPointerException: Cannot invoke ""org.eclipse.wst.sse.core.internal.provisional.IndexedRegion.getEndOffset()"" because ""indexedRegion"" is null
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions(AbstractStructuredFoldingStrategy.java:507)
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.reconcile(AbstractStructuredFoldingStrategy.java:179)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:332)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694"
+JGit and EGit do not notify about ConfigChangedEvent when editing git config from console	"When i run something like 
+git remote add fj https://github.com/git-test4/.git
+
+I expect ConfigChanged listeners to be notified (the ones which are specified in org.eclipse.egit.core.RepositoryCache.RepositoryCache(String, int)
+ and 
+org.eclipse.egit.core.RepositoryHandle.addListeners(List<ListenerHandle>, ListenerList, WeakReference<RepositoryHandle>) for example). 
+
+But for now this type of event is fired only when some operations with org.eclipse.jgit.lib.Config inside Eclipse are made (Config class has fireConfigChangedEvent()). 
+
+I want to make some validator functions which validate Config settings when it's modified (specifically .git file). But Eclipse simply doesn't register this event when it'd done via console git client."
+Avoid packaging jetty bundles already packaged by the Platform	"
+DescriptionNitin Dahyabhai CLA Friend 2022-09-29 00:58:13 EDT
+The Platform builds *some* of the Jetty bundles we use for our Preview Servers. While having bundles built and signed by both the Platform and WTP haven't presented issues before, this should be cleaned up"
+NPE in org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions()	"Exception in thread ""org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor"" java.lang.NullPointerException: Cannot invoke ""org.eclipse.wst.sse.core.internal.provisional.IndexedRegion.getEndOffset()"" because ""indexedRegion"" is null
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions(AbstractStructuredFoldingStrategy.java:507)
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.reconcile(AbstractStructuredFoldingStrategy.java:179)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:332)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694"
+JGit and EGit do not notify about ConfigChangedEvent when editing git config from console	"When i run something like 
+git remote add fj https://github.com/git-test4/.git
+
+I expect ConfigChanged listeners to be notified (the ones which are specified in org.eclipse.egit.core.RepositoryCache.RepositoryCache(String, int)
+ and 
+org.eclipse.egit.core.RepositoryHandle.addListeners(List<ListenerHandle>, ListenerList, WeakReference<RepositoryHandle>) for example). 
+
+But for now this type of event is fired only when some operations with org.eclipse.jgit.lib.Config inside Eclipse are made (Config class has fireConfigChangedEvent()). 
+
+I want to make some validator functions which validate Config settings when it's modified (specifically .git file). But Eclipse simply doesn't register this event when it'd done via console git client."
+Avoid packaging jetty bundles already packaged by the Platform	"
+DescriptionNitin Dahyabhai CLA Friend 2022-09-29 00:58:13 EDT
+The Platform builds *some* of the Jetty bundles we use for our Preview Servers. While having bundles built and signed by both the Platform and WTP haven't presented issues before, this should be cleaned up"
+NPE in org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions()	"Exception in thread ""org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor"" java.lang.NullPointerException: Cannot invoke ""org.eclipse.wst.sse.core.internal.provisional.IndexedRegion.getEndOffset()"" because ""indexedRegion"" is null
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.getIndexedRegions(AbstractStructuredFoldingStrategy.java:507)
+	at org.eclipse.wst.sse.ui.internal.projection.AbstractStructuredFoldingStrategy.reconcile(AbstractStructuredFoldingStrategy.java:179)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:332)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694"
